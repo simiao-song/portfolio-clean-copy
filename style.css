@@ -95,3 +95,51 @@ html{scroll-padding-top:82px}.nav.wrap{display:flex;align-items:center;justify-c
 @media (max-width: 700px) {
   .signed-photo .image-signature { font-size: 9px; }
 }
+
+
+.collage .collage-star{display:none}.frame-print{position:absolute;left:0;right:0;top:0;height:22px;background:#a44c36;color:#f5f2e9;display:flex;justify-content:flex-end;align-items:center;gap:5px;padding-right:9px;pointer-events:none}.frame-print svg{width:13px;height:13px}.city-photo{padding-top:25px}.section-bloom{display:inline-flex;margin-left:.25em;vertical-align:middle;color:#a44c36}.section-bloom svg{width:.38em;height:.38em}
+
+
+.city-photo figcaption::before{content:"";display:inline-block;width:18px;height:5px;border-block:1px solid #a44c36;vertical-align:middle;margin-right:9px}
+
+.image-signature svg { width: 7px; height: 7px; }
+.signed-photo .image-signature { gap: 2px; }
+.cover-landscape figcaption { padding: 8px clamp(16px,4.4vw,56px) 11px; color: var(--muted); background: var(--paper); font: italic 12px/1.4 Georgia, serif; }
+
+.frame-print {
+  inset: 0 0 auto;
+  height: 23px;
+  padding-inline: 12px;
+  background: #f1ebde;
+  color: #a44c36;
+  justify-content: center;
+}
+.frame-print::before, .frame-print::after, .iris-seam::before, .iris-seam::after {
+  content: "";
+  height: 1px;
+  background: currentColor;
+  opacity: .36;
+}
+.frame-print::before, .frame-print::after { flex: 1; }
+.frame-print svg { width: 10px; height: 10px; }
+.frame-print svg:nth-child(2) { width: 13px; height: 13px; }
+.iris-seam {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding-inline: 8px;
+  background: var(--section-tint, var(--paper));
+  color: var(--rust);
+  pointer-events: none;
+}
+.iris-seam svg { width: 13px; height: 13px; }
+.iris-seam::before, .iris-seam::after { width: 18px; }
+.nav.wrap { box-shadow: none; border-bottom-color: #58614538; }
+.nav nav a, .nav-toggle { font: 14px/1.4 Georgia, serif; }
+.nav nav>a:not(.nav-contact), .nav nav>a.nav-contact { border-bottom: 1px solid transparent; }
+.nav nav>a[aria-current="location"] { color: var(--rust); font-style: italic; font-weight: 400; border-bottom-color: currentColor; }
+@media(min-width:1101px) { .nav nav { gap: clamp(12px,1.5vw,24px); } }

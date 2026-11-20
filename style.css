@@ -152,9 +152,10 @@ html{scroll-padding-top:82px}.nav.wrap{display:flex;align-items:center;justify-c
 }
 
 .frame-print {
-  inset: -3px 7px auto auto;
+  inset: -3px 22px auto auto;
+  z-index: 1;
   width: 28px;
-  height: 34px;
+  height: 42px;
   padding: 4px 0 9px;
   background: #a44c36;
   color: #fff8e9;
@@ -180,3 +181,11 @@ html{scroll-padding-top:82px}.nav.wrap{display:flex;align-items:center;justify-c
 .sync-diagram .t1 { justify-self: start; }
 .sync-diagram .t2 { justify-self: end; }
 .sync-diagram .t3 { justify-self: center; }
+
+.city-photo .portrait-petals { position: absolute; top: 4px; left: 15px; }
+@media (max-width: 1100px) {
+  .nav .nav-toggle, .nav .nav-toggle[aria-expanded="true"],
+  .nav #section-navigation > a:is(:active, :focus, [aria-current="location"]) {
+    font: 400 14px/1.4 Georgia, serif;
+  }
+}

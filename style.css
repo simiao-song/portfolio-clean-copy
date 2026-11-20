@@ -202,3 +202,20 @@ html{scroll-padding-top:82px}.nav.wrap{display:flex;align-items:center;justify-c
 }
 .section-heading > div > .petal-label::before,
 .petal-label > .iris-seam::before, .petal-label > .iris-seam::after { display: none; }
+
+.journey-invitation {
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--olive);
+  font: italic 21px/1.25 Georgia, serif;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  text-decoration-color: #92977e;
+}
+.journey-invitation svg { fill: none; stroke: var(--rust); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.journey-invitation:hover { color: var(--rust); }
+.journey-invitation:focus-visible { outline: 2px solid var(--rust); outline-offset: 4px; }

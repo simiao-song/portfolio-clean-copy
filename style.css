@@ -182,10 +182,23 @@ html{scroll-padding-top:82px}.nav.wrap{display:flex;align-items:center;justify-c
 .sync-diagram .t2 { justify-self: end; }
 .sync-diagram .t3 { justify-self: center; }
 
-.city-photo .portrait-petals { position: absolute; top: 4px; left: 15px; }
+.hello-note .portrait-petals { position: absolute; top: 8px; right: 12px; }
 @media (max-width: 1100px) {
   .nav .nav-toggle, .nav .nav-toggle[aria-expanded="true"],
   .nav #section-navigation > a:is(:active, :focus, [aria-current="location"]) {
     font: 400 14px/1.4 Georgia, serif;
   }
 }
+
+.margin-pair { left: auto; right: 0; padding: 0; transform: translateY(-50%); }
+.margin-pair::before { width: 44px; }
+.petal-label > .iris-seam {
+  display: inline-flex;
+  position: static;
+  transform: none;
+  vertical-align: middle;
+  padding: 0;
+  margin-right: 8px;
+}
+.section-heading > div > .petal-label::before,
+.petal-label > .iris-seam::before, .petal-label > .iris-seam::after { display: none; }

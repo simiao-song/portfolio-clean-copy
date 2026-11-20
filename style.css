@@ -219,3 +219,36 @@ html{scroll-padding-top:82px}.nav.wrap{display:flex;align-items:center;justify-c
 .journey-invitation svg { fill: none; stroke: var(--rust); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .journey-invitation:hover { color: var(--rust); }
 .journey-invitation:focus-visible { outline: 2px solid var(--rust); outline-offset: 4px; }
+
+#skills .section-heading { position: relative; border-bottom: 0; }
+#skills .section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 32px;
+  height: 1px;
+  background: #a74e3545;
+}
+.rule-finish { inset: auto 0 0 auto; transform: translateY(50%); padding: 0; }
+.rule-finish::before, .rule-finish::after { display: none; }
+.language-list > div:last-child { border-bottom: 0; }
+.project-count {
+  position: relative;
+  width: auto;
+  height: auto;
+  border: 0;
+  margin-left: .18em;
+  padding: 0 .12em .1em;
+  font: italic 1em/1 Georgia, serif;
+  vertical-align: baseline;
+}
+.project-count::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 .04em;
+  height: .1em;
+  border-bottom: 1px solid currentColor;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+}

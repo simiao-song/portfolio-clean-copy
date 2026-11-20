@@ -80,3 +80,18 @@ html{scroll-padding-top:82px}.nav.wrap{display:flex;align-items:center;justify-c
 
 /* Light text-only signatures. */
 .signed-photo .image-signature{background:none;border-radius:0;padding:0;color:rgba(255,253,247,.68);text-shadow:0 1px 2px rgba(0,0,0,.22);font-weight:400}
+
+.signed-photo .image-signature {
+  display: inline-flex;
+  align-items: center;
+  gap: .32em;
+  color: rgba(255, 249, 232, .86);
+  font: italic 13px/1.15 Georgia, serif;
+  letter-spacing: .015em;
+  text-shadow: 0 1px 2px rgba(39, 32, 24, .48);
+}
+.image-signature svg { width: .72em; height: .72em; }
+.image-signature .signature-credit { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 700px) {
+  .signed-photo .image-signature { font-size: 12px; }
+}
